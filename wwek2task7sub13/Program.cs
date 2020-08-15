@@ -38,15 +38,15 @@ namespace wwek2task7sub13
                 switch (userNumber)
                 {
                     case 1:
-                        Console.WriteLine($"Your result for Adding {firstNo}+{secondNo} = " + (firstNo + secondNo));
+                        Console.WriteLine("Result for Adding {0} and {1} : {2}", firstNo, secondNo, firstNo + secondNo);
                         break;
 
                     case 2:
-                        Console.WriteLine("Your result for Subtraction : {0}", firstNo - secondNo);
+                        Console.WriteLine("Your result for Subtraction {0} and {1} : {2}", firstNo, secondNo, firstNo - secondNo);
                         break;
 
                     case 3:
-                        Console.WriteLine("Your result for Multiplication : {0}", (firstNo * secondNo));
+                        Console.WriteLine("Your result for Multiplication {0} and {1} : {2}", firstNo, secondNo, firstNo * secondNo);
                         break;
 
                     case 4:
@@ -56,7 +56,7 @@ namespace wwek2task7sub13
                         }
                         else
                         {
-                            Console.WriteLine($"Your result for Division  {firstNo}:{secondNo} = " + (firstNo / secondNo));
+                            Console.WriteLine("Your result for Division {0} and {1} : {2}", firstNo, secondNo, firstNo / secondNo);
                         }
                         break;
 
