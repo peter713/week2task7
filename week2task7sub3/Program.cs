@@ -6,24 +6,29 @@ namespace week2task7sub3
     {
         static void Main(string[] args)
         {//check if number is + or -
-
-            double myNumber;
-
             Console.WriteLine("Enter number, please");
-            myNumber = double.Parse(Console.ReadLine());
+            string strNum = Console.ReadLine();
+            bool isNum = double.TryParse(strNum, out double myNumber);
 
-            if (myNumber < 0)
+            if (isNum)
             {
-                Console.WriteLine($"{myNumber} is minus number");
-            }
-            else if (myNumber > 0)
-            {
-                Console.WriteLine($"{myNumber} is plus number");
+                if (myNumber < 0)
+                {
+                    Console.WriteLine($"{myNumber} is minus number");
+                }
+                else if (myNumber > 0)
+                {
+                    Console.WriteLine($"{myNumber} is plus number");
+                }
+                else if (myNumber == 0)
+                {
+                    Console.WriteLine($"{myNumber} is zero");
+                }
             }
             else
             {
-                Console.WriteLine($"{myNumber} is zero");
-            }
+                Console.WriteLine("Please check if your input is correct, then run app again.");
+            } 
             Console.ReadKey();
         }
     }
