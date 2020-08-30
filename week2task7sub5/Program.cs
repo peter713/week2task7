@@ -19,7 +19,7 @@ namespace week2task7sub5
                 {
                     Console.WriteLine("Your age gives you warranty to be canditate of the member of parliament or even prime minister");
                 }
-                else if (age >= 21 && age < 35)
+                else if (age >= 30 && age < 35)
                 {
                     Console.WriteLine("Your age gives you warranty to be canditate of the member of parliament, prime minister or senator");
                 }
