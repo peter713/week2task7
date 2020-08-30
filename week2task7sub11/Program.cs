@@ -10,7 +10,7 @@ namespace week2task7sub11
             string strMark = Console.ReadLine();
             bool isMark = byte.TryParse(strMark, out byte mark);
             
-            if (!isMark || mark>7)
+            if (!isMark || mark>=7)
             {
                 Console.WriteLine("This data isn't from correct range. Please type in correct data");
             }
