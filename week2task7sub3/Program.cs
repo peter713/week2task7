@@ -14,11 +14,11 @@ namespace week2task7sub3
             {
                 if (myNumber < 0)
                 {
-                    Console.WriteLine($"{myNumber} is minus number");
+                    Console.WriteLine($"{myNumber} is negative number");
                 }
                 else if (myNumber > 0)
                 {
-                    Console.WriteLine($"{myNumber} is plus number");
+                    Console.WriteLine($"{myNumber} is positive number");
                 }
                 else if (myNumber == 0)
                 {
